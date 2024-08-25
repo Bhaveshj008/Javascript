@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bg-black{
+            background-color: black;
+            color: aqua;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div><h1 id="first-heading" class="heading">This is first Heading <span hidden>this is hidden txt</span></h1>
+    <div class="parrent">
+     <div class="day">sunday</div>    
+     <div class="day">monday</div>      
+     <div class="day">tuesday</div>      
+     <div class="day">wednessday</div>
+     <div class="day">thursday</div> 
+     <div class="day">friday</div>     
+     <div class="day">saturday</div>      
+    
+    </div>
+</body>
+<Script>
+    document.getElementById('first-heading').innerHTML="आठवड्यातील वार "
+    let parent = document.querySelector('.parrent')
+    
+    console.log(parent);
+    let days = parent.children;
+    console.log(days);
+    for (const element of days) {
+        element.style.backgroundColor="green"
+        element.style.padding='10px'
+        element.style.margin='10px'
+        element.style.borderRadius='50px'
+    }
+
+
+    console.log(parent.firstElementChild);
+    console.log(parent.lastElementChild);
+
+    const oneDay = document.querySelector('.day')
+    console.log(oneDay.parentElement);
+    
+    console.log(oneDay.nextElementSibling);
+    console.log(oneDay.previousElementSibling);
+    
+    
+    
+    const allDays= document.querySelectorAll('.day')
+    console.log(allDays);
+    const firstChildren= parent.firstElementChild.cloneNode(true)
+ 
+    
+    allDays.forEach((day)=>{
+    if (!day.nextElementSibling) {
+        parent.appendChild(firstChildren);
+        day.nextElementSibling.setAttribute('hidden','true')
+        let nextDay=day.nextElementSibling.innerText.split(' ')[0]
+        day.innerHTML= `<b>${day.innerHTML} ho ya ${nextDay} roj khao ande</b>`
+    }
+    
+    else{
+        
+
+        day.innerHTML= `<b>${day.innerHTML} ho ya ${day.nextElementSibling.innerHTML} roj khao ande</b>`
+        
+    }
+})
+    
+    
+    
+    
+    
+    
+    
+</Script>
+</html>

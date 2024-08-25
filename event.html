@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li id="dog">dog</li>
+        <li id="cat">cat</li>
+        <li id="lion">lion</li>
+        <li id="goat">goat</li>
+        <li id="buffello">buffello</li>
+        <li id="man">man</li>
+        <li id="women">women</li>
+        <li id="boy">boy</li>
+        <li id="girl">girl</li>
+        <li id="guardian">guardian</li>
+        <li id="google"><a href="https://www.google.com">google</a></li>
+    </ul>
+</body>
+<script>
+    // document.querySelector('ul').addEventListener('click', (e)=>{
+    //     alert('clicked on the ul element')
+    //     //e.stopPropagation() //stops the bubling......... bubblingg mean bottom to top/// but it will not affect to the top to bottom 
+    //     console.log('clicked on thee ul');
+       
+    // }, false)
+    // console.log(dog);
+    
+    // document.getElementById('man').addEventListener('click',(e)=>{
+    //     console.log(e.timeStamp);
+    //     e.stopPropagation() //stops the bubling......... bubblingg mean bottom to top/// it will stop propogation of the tp element event listner
+    //     alert('man was clicked')
+    //     console.log('man was clicked');
+        
+        
+    // },false )// hear false is the default event propogation// which is bubbling .. in certain scenarios we have to use capturing which is true .. capturing goes to top to bottom.
+
+    // document.getElementById('google').addEventListener('click', function(e){
+    //     e.preventDefault()// it stops the browser's default behaviour// i.e stops the naviaton to the url or submitting the form
+    //     alert('google clicked')
+    //     e.stopPropagation()// it stops the bubbling of the parrent's event handler
+        
+
+    // })
+
+
+
+
+const ul = document.querySelector('ul');
+ul.addEventListener('click', function(e){
+    console.log(e.target.tagName)
+    if(e.target.tagName=='LI'){
+        e.target.remove()
+    }
+
+    
+    
+})
+
+
+
+
+
+
+    
+</script>
+</html>

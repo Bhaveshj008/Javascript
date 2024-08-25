@@ -1,0 +1,20 @@
+
+.container {
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    display: flex;
+}
+#card {
+    border: 2px solid black;
+    height: 30px;
+    width: 30px;
+    background-color: aqua;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.card :hover{
+    width: 40px;   
+    height:40px; 
+}

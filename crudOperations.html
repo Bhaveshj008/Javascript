@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud Operations</title>
+</head>
+<style>
+    body {
+        background-color: rgb(1, 28, 52);
+        color: white;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div.heading>
+            <h1>Crud Operations</h1>
+        </div.heading>
+        <ul></ul>
+    </div>
+</body>
+<script>
+    //add
+    function addlang(language) {
+        let li = document.createElement('li')
+        li.appendChild(document.createTextNode(language))
+        document.querySelector('ul').appendChild(li)
+    }
+    addlang('javascript')
+    addlang('mongo')
+    addlang('c')
+    addlang('c++')
+    addlang('python')
+    addlang('ruby')
+    addlang('html')
+    addlang('css')
+    //edit
+    function editLang(index, newLang){
+        console.log(newLang);
+        const ExistingLang=document.querySelector(`li:nth-child(${index})`);      
+        const newLi=document.createElement('li')
+        newLi.appendChild(document.createTextNode(newLang))
+        console.log(newLi);
+        ExistingLang.replaceWith(newLi)
+    }
+    editLang(4,'sql')
+    
+    //remove
+    function remove(index){
+        const language = document.querySelector(`li:nth-child(${index})`);
+        language.remove()
+    }
+    remove(8)
+
+</script>
+
+</html>

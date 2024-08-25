@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="btn" onclick=shadesOfColor()>Click me to view colors</button>
+</body>
+<Script>
+    document.querySelector('body').style.backgroundColor = 'black'
+    const colorShades = {
+        red: [
+            "#ffcdd2", // Lightest shade
+            "#ef9a9a",
+            "#e57373",
+            "#f44336",
+            "#e53935",
+            "#d32f2f",
+            "#c62828",
+            "#b71c1c"  // Darkest shade
+        ],
+        green: [
+            "#c8e6c9",
+            "#a5d6a7",
+            "#81c784",
+            "#66bb6a",
+            "#4caf50",
+            "#43a047",
+            "#388e3c",
+            "#2c6b2f"  // Darkest shade
+        ],
+        blue: [
+            "#e3f2fd",
+            "#bbdefb",
+            "#90caf9",
+            "#64b5f6",
+            "#42a5f5",
+            "#2196f3",
+            "#1e88e5",
+            "#1565c0"  // Darkest shade
+        ],
+        yellow: [
+            "#fff9c4",
+            "#fff59d",
+            "#fdd835",
+            "#fbc02d",
+            "#f9a825",
+            "#f57f17",
+            "#fbc02d",
+            "#f9a825"  // Darkest shade
+        ]
+    };
+
+    const shadesOfColor = function () {
+        for (const color in colorShades) {
+            console.log(colorShades[color]);
+            
+            for (const shade of colorShades[color]) {
+                const div = document.createElement('div');
+                console.log(div);
+                div.className = 'container'
+                div.id = Math.round(Math.random() * 10 + 1)
+                let textNode = document.createTextNode(shade)
+                div.appendChild(textNode)
+                div.style.backgroundColor = shade
+                div.style.color = 'white'
+                div.style.borderRadius = '50px'
+                div.style.margin = '10px'
+                div.style.padding = '10px'
+                document.querySelector('body').appendChild(div)
+                document.querySelector('#btn').setAttribute('hidden', 'true')
+            }
+
+        }
+    }
+
+</Script>
+
+</html>

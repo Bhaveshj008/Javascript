@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black; 
+            height: 100vh; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            color: white;
+        }
+        table, th, td {
+          border:1px solid rgb(250, 248, 248);
+          text-align: center;
+         
+          margin: 20px;
+        }
+        </style>
+</head>
+
+<body
+    style="background-color: black; height: 100vh; display: flex; justify-content: center; align-items: center; color: white;">
+    <div id="keyInfo">Press Any Key to see their Information</div>
+</body>
+<script>
+    const keyInfo = document.getElementById('keyInfo');
+    window.addEventListener('keyup', (e) => {
+        console.log(e);
+        
+        keyInfo.innerHTML = `
+            <table style="width:100%">
+  <tr>
+    <th>Key</th>
+    <th>Code</th>
+    <th>KeyCode</th>
+  </tr>
+  <tr>
+    <td>${e.key===' '? 'Space': e.key}</td>
+    <td>${e.code}</td>
+    <td>${e.keyCode}</td>
+  </tr>
+  
+</table>
+        `
+
+    })
+</script>
+
+</html>

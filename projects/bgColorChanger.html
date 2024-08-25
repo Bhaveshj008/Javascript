@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .colorcontainer {
+            margin-top: 50px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .color {
+            height: 20px;
+            width: 20px;
+            border: 2px solid black;
+            border-radius: 20px;
+            margin: 10px;
+            padding: 10px;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .color:hover {
+            height: 25px;
+            width: 25px;
+        }
+
+       
+    </style>
+</head>
+
+<body style="background-color: rgb(37, 78, 82);">
+    <div class="container">
+        <h1 class="heading">Hover on the colors</h1>
+        <div class="colorcontainer">
+            <div class="color" style="background-color: #FF0000;" id="red"></div>
+<div class="color" style="background-color: #00FF00;" id="lime"></div>
+<div class="color" style="background-color: #0000FF;" id="blue"></div>
+<div class="color" style="background-color: #FFFF00;" id="yellow"></div>
+<div class="color" style="background-color: #FF00FF;" id="fuchsia"></div>
+<div class="color" style="background-color: #00FFFF;" id="aqua"></div>
+<div class="color" style="background-color: #C0C0C0;" id="silver"></div>
+<div class="color" style="background-color: #808080;" id="gray"></div>
+<div class="color" style="background-color: #800000;" id="maroon"></div>
+<div class="color" style="background-color: #808000;" id="olive"></div>
+<div class="color" style="background-color: #008000;" id="green"></div>
+<div class="color" style="background-color: #800080;" id="purple"></div>
+<div class="color" style="background-color: #008080;" id="teal"></div>
+<div class="color" style="background-color: #000080;" id="navy"></div>
+<div class="color" style="background-color: #FFA07A;" id="lightSalmon"></div>
+<div class="color" style="background-color: #FA8072;" id="salmon"></div>
+<div class="color" style="background-color: #E9967A;" id="darkSalmon"></div>
+<div class="color" style="background-color: #F08080;" id="lightCoral"></div>
+<div class="color" style="background-color: #CD5C5C;" id="indianRed"></div>
+<div class="color" style="background-color: #DC143C;" id="crimson"></div>
+<div class="color" style="background-color: #FF6347;" id="tomato"></div>
+<div class="color" style="background-color: #FF4500;" id="orangeRed"></div>
+<div class="color" style="background-color: #FF8C00;" id="darkOrange"></div>
+<div class="color" style="background-color: #FFA500;" id="orange"></div>
+<div class="color" style="background-color: #FFD700;" id="gold"></div>
+<div class="color" style="background-color: #9ACD32;" id="yellowGreen"></div>
+<div class="color" style="background-color: #006400;" id="darkGreen"></div>
+<div class="color" style="background-color: #2E8B57;" id="seaGreen"></div>
+<div class="color" style="background-color: #3CB371;" id="mediumSeaGreen"></div>
+<div class="color" style="background-color: #228B22;" id="forestGreen"></div>
+<div class="color" style="background-color: #32CD32;" id="limeGreen"></div>
+<div class="color" style="background-color: #98FB98;" id="paleGreen"></div>
+<div class="color" style="background-color: #7CFC00;" id="lawngreen"></div>
+<div class="color" style="background-color: #7FFF00;" id="chartreuse"></div>
+<div class="color" style="background-color: #00FA9A;" id="mediumSpringGreen"></div>
+<div class="color" style="background-color: #00FF7F;" id="springGreen"></div>
+<div class="color" style="background-color: #F0FFF0;" id="honeydew"></div>
+<div class="color" style="background-color: #F5FFFA;" id="mintCream"></div>
+<div class="color" style="background-color: #FFE4E1;" id="mistyRose"></div>
+<div class="color" style="background-color: #FFDAB9;" id="peachPuff"></div>
+<div class="color" style="background-color: #FFE4B5;" id="blanchedAlmond"></div>
+<div class="color" style="background-color: #FFEFD5;" id="papayaWhip"></div>
+<div class="color" style="background-color: #FFF5EE;" id="seaShell"></div>
+<div class="color" style="background-color: #FDF5E6;" id="oldLace"></div>
+<div class="color" style="background-color: #FAEBD7;" id="antiqueWhite"></div>
+<div class="color" style="background-color: #F5DEB3;" id="wheat"></div>
+<div class="color" style="background-color: #D2B48C;" id="tan"></div>
+<div class="color" style="background-color: #DEB887;" id="burlyWood"></div>
+<div class="color" style="background-color: #D8BFD8;" id="thistle"></div>
+<div class="color" style="background-color: #DDA0DD;" id="plum"></div>
+<div class="color" style="background-color: #EE82EE;" id="violet"></div>
+<div class="color" style="background-color: #DA70D6;" id="orchid"></div>
+<div class="color" style="background-color: #FF00FF;" id="magenta"></div>
+<div class="color" style="background-color: #FF1493;" id="deepPink"></div>
+<div class="color" style="background-color: #C71585;" id="mediumVioletRed"></div>
+<div class="color" style="background-color: #D02090;" id="deepPink"></div>
+<div class="color" style="background-color: #FFB6C1;" id="lightPink"></div>
+<div class="color" style="background-color: #FF69B4;" id="hotPink"></div>
+<div class="color" style="background-color: #FFC0CB;" id="pink"></div>
+<div class="color" style="background-color: #FFD700;" id="gold"></div>
+<div class="color" style="background-color: #F5DEB3;" id="wheat"></div>
+<div class="color" style="background-color: #D2B48C;" id="tan"></div>
+<div class="color" style="background-color: #DEB887;" id="burlyWood"></div>
+<div class="color" style="background-color: #D8BFD8;" id="thistle"></div>
+<div class="color" style="background-color: #DDA0DD;" id="plum"></div>
+<div class="color" style="background-color: #EE82EE;" id="violet"></div>
+<div class="color" style="background-color: #DA70D6;" id="orchid"></div>
+<div class="color" style="background-color: #FF4500;" id="orangeRed"></div>
+<div class="color" style="background-color: #FF8C00;" id="darkOrange"></div>
+<div class="color" style="background-color: #FFA500;" id="orange"></div>
+<div class="color" style="background-color: #FFD700;" id="gold"></div>
+<div class="color" style="background-color: #FFFF00;" id="yellow"></div>
+<div class="color" style="background-color: #9ACD32;" id="yellowGreen"></div>
+<div class="color" style="background-color: #006400;" id="darkGreen"></div>
+<div class="color" style="background-color: #2E8B57;" id="seaGreen"></div>
+<div class="color" style="background-color: #3CB371;" id="mediumSeaGreen"></div>
+<div class="color" style="background-color: #228B22;" id="forestGreen"></div>
+<div class="color" style="background-color: #32CD32;" id="limeGreen"></div>
+<div class="color" style="background-color: #98FB98;" id="paleGreen"></div>
+<div class="color" style="background-color: #7CFC00;" id="lawngreen"></div>
+<div class="color" style="background-color: #7FFF00;" id="chartreuse"></div>
+<div class="color" style="background-color: #00FA9A;" id="mediumSpringGreen"></div>
+<div class="color" style="background-color: #00FF7F;" id="springGreen"></div>
+<div class="color" style="background-color: #F0FFF0;" id="honeydew"></div>
+<div class="color" style="background-color: #F5FFFA;" id="mintCream"></div>
+<div class="color" style="background-color: #FFE4E1;" id="mistyRose"></div>
+<div class="color" style="background-color: #FFDAB9;" id="peachPuff"></div>
+<div class="color" style="background-color: #FFE4B5;" id="blanchedAlmond"></div>
+<div class="color" style="background-color: #FFEFD5;" id="papayaWhip"></div>
+<div class="color" style="background-color: #FFF5EE;" id="seaShell"></div>
+<div class="color" style="background-color: #FDF5E6;" id="oldLace"></div>
+<div class="color" style="background-color: #FAEBD7;" id="antiqueWhite"></div>
+<div class="color" style="background-color: #F5DEB3;" id="wheat"></div>
+
+
+        </div>
+
+    </div>
+</body>
+<script>
+    const body = document.querySelector('body')
+    const heading = document.querySelector('.heading')
+    const colors = document.querySelectorAll('.color')
+    colors.forEach((color) => {
+        color.addEventListener('mouseover', () => {
+            console.log(color.id, "color clicked")
+            body.style.backgroundColor = color.id
+            heading.textContent=color.id
+        })
+        color.addEventListener('mouseout', (e) => {
+            body.style.backgroundColor = 'rgb(37, 78, 82)'
+            heading.textContent='Hover on the colors'
+        })
+    })
+
+</script>
+
+</html>

@@ -21,22 +21,22 @@
     </ul>
 </body>
 <script>
-    // document.querySelector('ul').addEventListener('click', (e)=>{
-    //     alert('clicked on the ul element')
-    //     //e.stopPropagation() //stops the bubling......... bubblingg mean bottom to top/// but it will not affect to the top to bottom 
-    //     console.log('clicked on thee ul');
+    document.querySelector('ul').addEventListener('click', (e)=>{
+        alert('clicked on the ul element')
+        //e.stopPropagation() //stops the bubling......... bubblingg mean bottom to top/// but it will not affect to the top to bottom 
+        console.log('clicked on thee ul');
        
-    // }, false)
-    // console.log(dog);
+    }, false)
+    console.log(dog);
     
-    // document.getElementById('man').addEventListener('click',(e)=>{
-    //     console.log(e.timeStamp);
-    //     e.stopPropagation() //stops the bubling......... bubblingg mean bottom to top/// it will stop propogation of the tp element event listner
-    //     alert('man was clicked')
-    //     console.log('man was clicked');
+    document.getElementById('man').addEventListener('click',(e)=>{
+        console.log(e.timeStamp);
+        e.stopPropagation() //stops the bubling......... bubblingg mean bottom to top/// it will stop propogation of the tp element event listner
+        alert('man was clicked')
+        console.log('man was clicked');
         
         
-    // },false )// hear false is the default event propogation// which is bubbling .. in certain scenarios we have to use capturing which is true .. capturing goes to top to bottom.
+    },false )// hear false is the default event propogation// which is bubbling .. in certain scenarios we have to use capturing which is true .. capturing goes to top to bottom.
 
     // document.getElementById('google').addEventListener('click', function(e){
     //     e.preventDefault()// it stops the browser's default behaviour// i.e stops the naviaton to the url or submitting the form
